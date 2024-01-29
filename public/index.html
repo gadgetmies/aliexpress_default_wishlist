@@ -3,7 +3,7 @@
     <title>Aliexpress default wishlist visualiser</title>
   </head>
   <body>
-    <form>
+    <form id="form">
       <textarea id="all-items">
       </textarea>
       <button>Process</button>
@@ -41,6 +41,6 @@
       }
     }
 
-    form.addEventListener("submit", processAllItems);
+    document.getElementById("form").addEventListener("submit", processAllItems);
   </script>
 </html>
