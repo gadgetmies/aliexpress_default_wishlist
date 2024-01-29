@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Aliexpress default wishlist visualiser</title>
+  </head>
+  <body>
+    <form>
+      <textarea id="all-items">
+      </textarea>
+      <button>Process</button>
+    </form>
+    <div id="error"></div>
+    <table>
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Image</td>
+        </tr>
+      </thead>
+      <tbody id="items">
+      </tbody>
+    </table>
+  </body>
+  <script>  
+    function processAllItems(e) {
+      e.preventDefault()
+      try {
+        const allItems = JSON.parse(document.getElementById('all-items'))
+
+        const itemsEl = document.getElementById('items')
+        itemsEl.innerHTML = ''
+        allItems
+          .filter(({groupId}) => groupId === 0)
+          .forEach(
+            ({itemId, imageUrl, subject}) => itemsEl.insertAdjacentHTML(
+              "beforeend", 
+              `<tr><td><a href="https://www.aliexpress.com/item/${itemId}.html">${subject}</a></td><td><img src="${imageUrl}"/></td></tr>`
+            )
+          )
+      } catch (e) {
+        document.getElementById('error').innerText = 'Processing items failed: ' + e.toString()
+      }
+    }
+
+    form.addEventListener("submit", processAllItems);
+  </script>
+</html>
