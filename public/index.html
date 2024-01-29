@@ -33,7 +33,7 @@
           .forEach(
             ({itemId, imageUrl, subject}) => itemsEl.insertAdjacentHTML(
               "beforeend", 
-              `<tr><td><a href="https://www.aliexpress.com/item/${itemId}.html">${subject}</a></td><td><img src="${imageUrl}"/></td></tr>`
+              `<tr><td><a href="https://www.aliexpress.com/item/${itemId}.html" target="_blank">${subject}</a></td><td><a href="${imageUrl}" target="_blank">View image</a></td></tr>`
             )
           )
       } catch (e) {
