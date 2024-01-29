@@ -24,7 +24,7 @@
     function processAllItems(e) {
       e.preventDefault()
       try {
-        const allItems = JSON.parse(document.getElementById('all-items'))
+        const allItems = JSON.parse(document.getElementById('all-items').value)
 
         const itemsEl = document.getElementById('items')
         itemsEl.innerHTML = ''
