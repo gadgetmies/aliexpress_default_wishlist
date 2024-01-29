@@ -3,10 +3,10 @@ Visualise Aliexpress default wishlist from allItems React state
 
 ## Instructions
 
-You need to have the (React DevTools)[https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi] installed in Chrome to get the items in the wishlist.
+You need to have the [React DevTools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) installed in Chrome to get the items in the wishlist.
 
 ### Steps:
-1. Open the (Aliexpress wishlist page)[https://www.aliexpress.com/p/wishlist/index.html]
+1. Open the [Aliexpress wishlist page](https://www.aliexpress.com/p/wishlist/index.html)
 1. Scroll the page down in order to fetch more items
 1. Open JavaScript Console (⌘+⌥+J on MacOS, ctrl+alt+J on Windows & Linux)
 1. Open the Components tab (might be hidden under the ">>" item in the tabs at the top
