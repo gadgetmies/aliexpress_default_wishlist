@@ -7,7 +7,7 @@ You need to have the [React DevTools](https://chromewebstore.google.com/detail/r
 
 ### Steps:
 1. Open the [Aliexpress wishlist page](https://www.aliexpress.com/p/wishlist/index.html)
-1. Scroll the page down in order to fetch more items
+1. Scroll the page down in order to fetch more items (you can e.g. keep page down pressed until you reach the end of the list)
 1. Open JavaScript Console (⌘+⌥+J on MacOS, CTRL+SHIFT+J on Windows & Linux)
 1. Open the Components tab (might be hidden under the ">>" item in the tabs at the top
 1. Click the Context.Provider in the components tree (see image below)
