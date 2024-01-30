@@ -1,12 +1,20 @@
-# Aliexpress default wishlist visualiser
-Visualise Aliexpress default wishlist from allItems React state
+# Aliexpress default wish list visualiser
+Visualise Aliexpress default wish list from allItems React state
+
+## The issue
+
+Aliexpress limits the amount of items you can store in your default wish list and once you reach that amount, you will be unable to add items to any wish list as the items are added to the default wish list first from where those can be moved to other lists. To add insult to injury, there is no page for viewing the default wish list, so it is very difficult to clean up the default list.
+
+## The solution
+
+Using the <a href="https://gadgetmies.github.io/aliexpress_default_wishlist/public/" target="_blank">Visualiser page</a> in this repository and the instructions below you will be able to get a list of the items in the default wish list and thus you know which items you should move in order to clean up the default wish list.
 
 ## Instructions
 
-You need to have the [React DevTools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) installed in Chrome to get the items in the wishlist.
+You need to have the [React DevTools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) installed in Chrome to get the items in the wish list.
 
 ### Steps:
-1. Open the [Aliexpress wishlist page](https://www.aliexpress.com/p/wishlist/index.html)
+1. Open the [Aliexpress wish list page](https://www.aliexpress.com/p/wishlist/index.html)
 1. Scroll the page down in order to fetch more items (you can e.g. keep page down pressed until you reach the end of the list)
 1. Open JavaScript Console (⌘+⌥+J on MacOS, CTRL+SHIFT+J on Windows & Linux)
 1. Open the Components tab (might be hidden under the ">>" item in the tabs at the top
